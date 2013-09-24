@@ -1,0 +1,55 @@
+
+.flexdropdownmenu, .flexdropdownmenu ul{ /*topmost and sub ULs, respectively*/
+font: normal 13px Arial;
+text-decoration: none;
+margin: 0;
+padding: 4px 0;
+position: absolute;
+left: 0;
+top: 0;
+list-style-type: none;
+background: #f7f5fa;
+/*border: 1px solid black;*/
+border-bottom-width: 0;
+visibility: hidden;
+display: none; /*collapse all sub menus to begin with*/
+/*box-shadow: 3px 3px 8px #7b7b7b; /*shadow for CSS3 capable browsers.*/
+/*-webkit-box-shadow: 3px 3px 8px #818181;
+-moz-box-shadow: 3px 3px 8px #818181;*/
+-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.255);
+     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.255);
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.255);
+}
+
+
+.flexdropdownmenu li{
+position: relative;
+text-decoration: none;
+}
+
+.flexdropdownmenu li a{
+display: block;
+width: 160px; /*width of menu (not including side paddings)*/
+color: #563da4;
+background: #f7f5fa;
+/*border-bottom: 1px solid black;*/
+text-decoration: none;
+padding: 6px 8px;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.10);
+}
+
+* html .flexdropdownmenu li{ /*IE6 CSS hack*/
+display: inline-block;
+width: 170px; /*width of menu (include side paddings of LI A*/
+}
+
+.flexdropdownmenu li a:hover, .flexdropdownmenu li.selected>a{
+background: #e5e3e9;
+}
+
+.rightarrowclass{
+position: absolute;
+top: 6px;
+right: 5px;
+}
+
